@@ -15,7 +15,7 @@ public class DatabaseInitService {
 
     public void createTable(Database database)  {
         try {
-            String initDBUrl = "C:\\Users\\alexa\\IdeaProjects\\modul4\\sql\\init_db.sql";
+            String initDBUrl = "./sql/init_db.sql";
             String sql = String.join("\n", Files.readAllLines(Paths.get(initDBUrl)));
             database.executeUpdate(sql);
 

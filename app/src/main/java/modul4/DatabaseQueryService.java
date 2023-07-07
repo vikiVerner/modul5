@@ -28,7 +28,7 @@ public class DatabaseQueryService {
 
         try {
             List<LongestProject> longestProjects = new ArrayList<>();
-            String url = "C:\\Users\\alexa\\IdeaProjects\\modul4\\sql\\find_longest_project.sql";
+            String url = "./sql/find_longest_project.sql";
             String sql = String.join("\n", Files.readAllLines(Paths.get(url)));
             Statement st = database.getConnection().createStatement();
             ResultSet rs = st.executeQuery(sql);
@@ -38,6 +38,7 @@ public class DatabaseQueryService {
             }
             rs.close();
             st.close();
+            System.out.println("longestProjects = " + longestProjects);
             return longestProjects;
 
         } catch (IOException e) {
@@ -48,7 +49,7 @@ public class DatabaseQueryService {
     public List<MaxProjectsCountClient> findMaxProjectsClient(Database database) throws SQLException {
         try {
             List<MaxProjectsCountClient> projectsCount = new ArrayList<>();
-            String url = "C:\\Users\\alexa\\IdeaProjects\\modul4\\sql\\find_max_projects_client.sql";
+            String url = "./sql/find_max_projects_client.sql";
             String sql = String.join("\n", Files.readAllLines(Paths.get(url)));
             Statement st = database.getConnection().createStatement();
             ResultSet rs = st.executeQuery(sql);
@@ -58,6 +59,7 @@ public class DatabaseQueryService {
             }
             rs.close();
             st.close();
+            System.out.println("projectsCount = " + projectsCount);
             return projectsCount;
 
         } catch (IOException e) {
@@ -68,7 +70,7 @@ public class DatabaseQueryService {
     public List<SalaryWorker> findMaxSalaryWorker(Database database) throws SQLException {
         try {
             List<SalaryWorker> salaryWorkers = new ArrayList<>();
-            String url = "C:\\Users\\alexa\\IdeaProjects\\modul4\\sql\\find_max_salary_worker.sql";
+            String url = "./sql/find_max_salary_worker.sql";
             String sql = String.join("\n", Files.readAllLines(Paths.get(url)));
             Statement st = database.getConnection().createStatement();
             ResultSet rs = st.executeQuery(sql);
@@ -78,6 +80,7 @@ public class DatabaseQueryService {
             }
             rs.close();
             st.close();
+            System.out.println("salaryWorkers = " + salaryWorkers);
             return salaryWorkers;
 
         } catch (IOException e) {
@@ -88,7 +91,7 @@ public class DatabaseQueryService {
     public List<YoungestEldestWorker> printProjectPrices(Database database) throws SQLException {
         try {
             List<YoungestEldestWorker> youngestEldestWorkers = new ArrayList<>();
-            String url = "C:\\Users\\alexa\\IdeaProjects\\modul4\\sql\\find_youngest_eldest_workers.sql";
+            String url = "./sql/find_youngest_eldest_workers.sql";
             String sql = String.join("\n", Files.readAllLines(Paths.get(url)));
             Statement st = database.getConnection().createStatement();
             ResultSet rs = st.executeQuery(sql);
@@ -98,6 +101,7 @@ public class DatabaseQueryService {
             }
             rs.close();
             st.close();
+            System.out.println("youngestEldestWorkers = " + youngestEldestWorkers);
             return youngestEldestWorkers;
 
         } catch (IOException e) {

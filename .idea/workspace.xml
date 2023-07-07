@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6477f4f9-cd7e-4944-859d-1093fcfb8224" name="Changes" comment="" />
+    <list default="true" id="6477f4f9-cd7e-4944-859d-1093fcfb8224" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/modul4/DatabaseInitService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/modul4/DatabaseInitService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/modul4/DatabasePopulateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/modul4/DatabasePopulateService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/modul4/DatabaseQueryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/modul4/DatabaseQueryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/modul4/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/modul4/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/test.mv.db" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,17 +30,20 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="2S3X1J5y8AwJxLqBDsSTjSmVIU1" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/alexa/IdeaProjects/modul4/sql&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/alexa/IdeaProjects/modul1.maven"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\alexa\IdeaProjects\modul4\sql" />

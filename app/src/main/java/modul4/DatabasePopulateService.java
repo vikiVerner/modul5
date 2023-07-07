@@ -11,7 +11,7 @@ public class DatabasePopulateService {
     }
     public void insertValues(Database database)  {
         try {
-            String insertDBUrl = "C:\\Users\\alexa\\IdeaProjects\\modul4\\sql\\populate_db.sql";
+            String insertDBUrl = "./sql/populate_db.sql";
             String sql = String.join("\n", Files.readAllLines(Paths.get(insertDBUrl)));
             database.executeUpdate(sql);
         } catch (IOException e) {
