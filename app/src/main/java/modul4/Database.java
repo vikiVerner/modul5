@@ -17,9 +17,11 @@ public class Database {
 
     }
     public static Database getInstance(){
+
         return INSTANCE;
     }
     public Connection getConnection(){
+
         return connection;
     }
 

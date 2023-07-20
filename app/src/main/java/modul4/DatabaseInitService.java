@@ -1,8 +1,7 @@
 package modul4;
 
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
+
 
 public class DatabaseInitService {
 
@@ -14,15 +13,11 @@ public class DatabaseInitService {
     }
 
     public void createTable(Database database)  {
-        try {
-            String initDBUrl = "./sql/init_db.sql";
-            String sql = String.join("\n", Files.readAllLines(Paths.get(initDBUrl)));
-            database.executeUpdate(sql);
 
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+        String  sql = ReadSQLFile.getSqlFromFile("./sql/init_db.sql");
+
+        database.executeUpdate(sql);
+
     }
-
 
 }
