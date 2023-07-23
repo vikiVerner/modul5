@@ -25,7 +25,8 @@ dependencies {
     // https://mvnrepository.com/artifact/com.h2database/h2
     implementation 'com.h2database:h2:2.1.214'
 
-
+    // https://mvnrepository.com/artifact/org.flywaydb/flyway-core
+    implementation 'org.flywaydb:flyway-core:9.20.1'
 }
 
 // Apply a specific Java toolchain to ease working on different environments.

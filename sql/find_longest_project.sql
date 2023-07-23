@@ -6,3 +6,4 @@ WHERE DATEDIFF('month', start_date, finish_date) = (
     SELECT MAX(DATEDIFF('month', start_date, finish_date))
     FROM project
 );
+

@@ -1,23 +1,25 @@
 package modul4;
 
+import org.flywaydb.core.Flyway;
+
 import java.io.IOException;
 
 
 public class DatabaseInitService {
 
     public static void main(String[] args) throws IOException {
-
-        Database database = Database.getInstance();
-        new DatabaseInitService().createTable(database);
-
+        String connectionUrl = "jdbc:h2:./test1";
+        new DatabaseInitService().createTable(connectionUrl);
     }
 
-    public void createTable(Database database)  {
+    public void createTable(String connectionUrl)  {
 
-        String  sql = ReadSQLFile.getSqlFromFile("./sql/init_db.sql");
+        Flyway flyway = Flyway
+                .configure()
+                .dataSource(connectionUrl, null, null)
+                .load();
 
-        database.executeUpdate(sql);
-
+        flyway.migrate();
     }
 
 }

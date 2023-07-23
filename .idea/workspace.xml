@@ -5,13 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6477f4f9-cd7e-4944-859d-1093fcfb8224" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/modul4/client/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/modul4/client/ClientDaoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/db/migration/V2__populate_db.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/test/java/modul4/client/ClientDaoServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test1.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/modul4/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/modul4/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/modul4/DatabaseInitService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/modul4/DatabaseInitService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/modul4/DatabasePopulateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/modul4/DatabasePopulateService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/modul4/DatabaseQueryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/modul4/DatabaseQueryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/modul4/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/modul4/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/test.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/modul4/DatabasePopulateService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/find_longest_project.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/find_longest_project.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/init_db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/db/migration/V1__init_db.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/populate_db.sql" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,10 +30,31 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="modul4" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -40,35 +68,35 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/alexa/IdeaProjects/modul1.maven"
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "C:/Users/alexa/IdeaProjects/modul6",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\alexa\IdeaProjects\modul4\sql" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="modul4.client" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.DatabaseQueryService">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="modul4.App" />
-      <module name="modul4.app.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="modul4.YoungestEldestWorker" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ClientDaoServiceTest">
     <configuration name="DatabaseInitService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="modul4.DatabaseInitService" />
       <module name="modul4.app.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="modul4.YoungestEldestWorker" />
+          <option name="PATTERN" value="modul4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -76,38 +104,76 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DatabasePopulateService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="modul4.DatabasePopulateService" />
-      <module name="modul4.app.main" />
+    <configuration name="ClientDaoServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="modul4.app.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="modul4.YoungestEldestWorker" />
+          <option name="PATTERN" value="modul4.client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="modul4.client" />
+      <option name="MAIN_CLASS_NAME" value="modul4.client.ClientDaoServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DatabaseQueryService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="modul4.DatabaseQueryService" />
-      <module name="modul4.app.main" />
+    <configuration name="ClientDaoServiceTest.testClearAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="modul4.app.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="modul4.YoungestEldestWorker" />
+          <option name="PATTERN" value="modul4.client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="modul4.client" />
+      <option name="MAIN_CLASS_NAME" value="modul4.client.ClientDaoServiceTest" />
+      <option name="METHOD_NAME" value="testClearAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientDaoServiceTest.testThatClientCreatedCorrectly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="modul4.app.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="modul4.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="modul4.client" />
+      <option name="MAIN_CLASS_NAME" value="modul4.client.ClientDaoServiceTest" />
+      <option name="METHOD_NAME" value="testThatClientCreatedCorrectly" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientDaoServiceTest.testThatGetIdWorkCorrectly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="modul4.app.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="modul4.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="modul4.client" />
+      <option name="MAIN_CLASS_NAME" value="modul4.client.ClientDaoServiceTest" />
+      <option name="METHOD_NAME" value="testThatGetIdWorkCorrectly" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DatabaseQueryService" />
-        <item itemvalue="Application.DatabasePopulateService" />
+        <item itemvalue="JUnit.ClientDaoServiceTest" />
+        <item itemvalue="JUnit.ClientDaoServiceTest.testThatGetIdWorkCorrectly" />
+        <item itemvalue="JUnit.ClientDaoServiceTest.testThatClientCreatedCorrectly" />
+        <item itemvalue="JUnit.ClientDaoServiceTest.testClearAll" />
         <item itemvalue="Application.DatabaseInitService" />
-        <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
   </component>
@@ -121,5 +187,23 @@
       <updated>1688376024848</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.h2.jdbc.JdbcResultSet" memberName="result" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>
