@@ -7,7 +7,7 @@ import java.io.IOException;
 
 public class DatabaseInitService {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         String connectionUrl = "jdbc:h2:./test1";
         new DatabaseInitService().createTable(connectionUrl);
     }

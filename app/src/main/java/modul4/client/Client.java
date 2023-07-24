@@ -19,4 +19,12 @@ public class Client {
     public String getName() {
         return name;
     }
+
+    @Override
+    public String toString() {
+        return "Client{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }

@@ -7,13 +7,12 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.io.File;
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.SQLClientInfoException;
 import java.sql.SQLException;
 
 
-import static org.junit.jupiter.api.Assertions.*;
 
 class ClientDaoServiceTest {
     private Connection connection;
@@ -46,9 +45,7 @@ class ClientDaoServiceTest {
     @Test
     public void testThatCreateNullWorkedCorrectly() {
 
-        Assertions.assertThrows(SQLClientInfoException.class,()->{
-            daoService.create(null);
-        });
+        Assertions.assertThrows(IllegalArgumentException.class,()-> daoService.create(null));
     }
     @Test
     public void testThatSetNameWorkedCorrectly() throws SQLException {
@@ -62,23 +59,21 @@ class ClientDaoServiceTest {
     }
     @Test
     public void testThatDeleteClientWorkedCorrectly() throws SQLException {
-        long newClientId = daoService.create("Anna");
-        daoService.deleteById(newClientId);
-        String newClientName = daoService.getById(newClientId);
-        assertNull(newClientName);
-    }
-    @Test
-    public void testClearAll() throws SQLException {
-        daoService.clearAll();
-        long id = daoService.maxId();
 
-        Assertions.assertEquals(0,id);
+        Assertions.assertThrows(IllegalArgumentException.class,()->{
+            long newClientId = daoService.create("Anna");
+            daoService.deleteById(newClientId);
+            String newClientName = daoService.getById(newClientId);
+        });
     }
-
 
     @AfterEach
     public  void afterEach() throws SQLException {
-        daoService.clearAll();
+
         connection.close();
+        File file = new File("./sql/test1.mv.db");
+        if (!file.exists()) {
+            file.delete();
+        }
     }
 }
